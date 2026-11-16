@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilby (2018) — Фан-сайт короткометражки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="parallax-bg"></body>>
+    <!-- Кнопка переключения темы -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Переключить тему">🌙</button>
+
+    <!-- Кнопка "наверх" -->
+    <button id="backToTop" class="back-to-top" aria-label="Наверх">↑</button>
+
+    <div class="container">
+        <!-- Шапка -->
+        <header class="hero">
+           <h1 class="animated-gradient">Bilby</h1>
+            <div class="subhead">2018 · DreamWorks Animation · 8 минут</div>
+            <div class="meta">
+                <span>🎬 Режиссёры: Лирон Топаз, Пьер Перифель, JP Sans</span>
+                <span>⭐ Рейтинг: 7.4 / 10</span>
+            </div>
+        </header>
+
+        <!-- Галерея кадров -->
+       <h2 class="gallery-title">📸 Кадры из мультфильма</h2>
+              <div class="gallery-grid">
+           <div class="card reveal">
+               <img src="images/bilby-perry.webp" alt="Пери - сумчатый барсук" class="card-img">
+               <div class="card-caption">
+                   Перри (билби)
+                   <span>Главный герой, пустынный сумчатый барсук</span>
+                   <button class="like-btn" data-card="1">❤️ <span class="like-count">0</span></button>
+               </div>
+           </div>
+           <div class="card reveal">
+               <img src="images/bilby-kylie.webp" alt="Кайли (птенец альбатроса)" class="card-img">
+               <div class="card-caption">
+                   Кайли (птенец альбатроса)
+                   <span>Беззащитный птенец, которого спасает Перри</span>
+                   <button class="like-btn" data-card="2">❤️ <span class="like-count">0</span></button>
+               </div>
+           </div>
+           <div class="card reveal">
+             <img src="images/bilby-outback.webp" alt="Австралийский аутбэк" class="card-img">
+               <div class="card-caption">
+                   Австралийский аутбэк
+                   <span>Суровый и опасный мир пустыни</span>
+                   <button class="like-btn" data-card="3">❤️ <span class="like-count">0</span></button>
+               </div>
+           </div>
+           <div class="card reveal">
+               <img src="images/bilby-adventure.webp" alt="Опасности и погони" class="card-img">
+               <div class="card-caption">
+                   Опасности и погони
+                   <span>Хищники  на пути героев</span>
+                   <button class="like-btn" data-card="4">❤️ <span class="like-count">0</span></button>
+               </div>
+           </div>
+       </div>
+
+
+
+        <!-- О мультфильме -->
+        <section class="about reveal">
+            <div class="about-text">
+                <h2>О мультфильме</h2>
+                <p><strong>Bilby</strong> — короткометражный анимационный фильм студии DreamWorks Animation, выпущенный в 2018 году. Действие происходит в суровых условиях австралийского аутбэка.</p>
+                <p>История рассказывает о сумчатом барсуке (билби) по имени Перри, который пытается выжить в пустыне, но неожиданно для себя становится защитником маленького птенца альбатроса по имени Кайли. Несмотря на то, что Перри изначально не хочет брать на себя ответственность, он раз за разом спасает птенца от хищников, демонстрируя храбрость и зарождающуюся привязанность.</p>
+                <p>Мультфильм полностью лишён диалогов — вся эмоциональная нагрузка передаётся через анимацию, мимику персонажей и музыку. Лента вошла в шорт-лист премии «Оскар» в категории «Лучший анимационный короткометражный фильм».</p>
+            </div>
+            <aside class="facts">
+                <h3>📋 Факты</h3>
+                <ul>
+                    <li><span>Год</span> <span>2018</span></li>
+                    <li><span>Студия</span> <span>DreamWorks</span></li>
+                    <li><span>Длительность</span> <span>8 минут</span></li>
+                    <li><span>Жанр</span> <span>Анимация, комедия</span></li>
+                    <li><span>Диалоги</span> <span>Отсутствуют</span></li>
+                    <li><span>Рейтинг</span> <span>7.4 / 10</span></li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- Блок "Поделись мыслью" (ТЕПЕРЬ ВНУТРИ КОНТЕЙНЕРА) -->
+        <section class="thoughts reveal" id="thoughts">
+            <div class="thoughts-header-top">
+                <span class="thoughts-badge">✨ Ваше мнение важно</span>
+                <h2 class="thoughts-title">Поделись мыслью о «Bilby»</h2>
+                <p class="thoughts-subtitle">
+                    Что вас тронуло в этой истории? Оставьте свою мысль — она сохранится
+                    в вашем браузере и появится в списке ниже.
+                </p>
+            </div>
+
+            <form id="thoughtForm" class="thought-form">
+                <div class="thought-input-wrap">
+                    <span class="thought-input-icon">💬</span>
+                    <textarea
+                        id="thoughtInput"
+                        class="thought-input"
+                        placeholder="Например: «Больше всего меня поразила сцена, где Перри…»"
+                        maxlength="300"
+                        rows="3"
+                        required
+                    ></textarea>
+                </div>
+                <div class="thought-form-footer">
+                    <span class="char-counter"><span id="charCount">0</span> / 300</span>
+                    <button type="submit" class="thought-submit">
+                        <span class="submit-icon">🚀</span> Добавить мысль
+                    </button>
+                </div>
+            </form>
+
+            <div class="thoughts-header">
+                <h3>💭 Мысли посетителей</h3>
+                <span class="thoughts-count" id="thoughtsCount">0</span>
+            </div>
+
+            <ul id="thoughtsList" class="thoughts-list"></ul>
+
+            <p id="thoughtsEmpty" class="thoughts-empty">
+                <span class="empty-emoji">🌵</span><br>
+                Пока здесь тихо, как в аутбэке.<br>
+                <strong>Будьте первым — оставьте свою мысль!</strong>
+            </p>
+        </section>
+
+        <!-- Подвал -->
+        <footer class="footer-note">
+            Фан-сайт создан в образовательных целях. Все права на мультфильм «Bilby» принадлежат DreamWorks Animation.
+        </footer>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal" aria-hidden="true">
+        <span class="modal-close">&times;</span>
+        <img class="modal-img" src="" alt="Просмотр кадра">
+        <div class="modal-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
